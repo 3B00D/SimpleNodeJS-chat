@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Simple NodeJs chat | abdulsalam alshallah</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link href="assets/css/framework7.min.css" rel="stylesheet" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+	
+		<script type="text/javascript"  src="assets/js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript"  src="assets/js/framework7.min.js"></script>
+		<script type="text/javascript"  src="assets/js/app.js"></script>
+		<script type="text/javascript"  src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+		
+	</head>
+	<body>
+		<div class="popup tablet-fullscreen set-name-popup">
+			<div class="content-block">
+				<div class="content-block-title">Insert Your display name</div>
+				<form id="changeNameForm">
+					<div class="list-block">
+						<ul>
+							<li class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">Your Name</div>
+									<div class="item-input">
+										<input type="text" id="username-txt" name="your-name" placeholder="Insert your display name">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list-block">
+						<ul>
+							<li>
+								<a href="#" class="item-link list-button change-name-submit "  >Save</a>
+							</li>
+							<li>
+								<a href="#" class="item-link list-button change-name-cancel close-popup" >Cancel</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="views">
+			<div class="view view-main" data-page="home">
+				<div class="pages">
+					<div class="page navbar-fixed toolbar-fixed" data-page="home">
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left"></div>
+								<div class="center" style="left: 0px;">Simple NodeJS messages</div>
+								<div class="right">
+									<a href="#" data-popup=".set-name-popup" class="link open-popup">
+										<i class="icon icon-bars"></i>
+										<span>Settings</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="toolbar messagebar" style="">
+							<div class="toolbar-inner">
+								<textarea placeholder="Message" class="" style=""></textarea><a class="link" href="#">Send</a>
+							</div>
+						</div>
+						<div class="page-content messages-content" style="">
+							<div class="messages messages-auto-layout">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
